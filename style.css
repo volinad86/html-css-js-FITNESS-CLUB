@@ -56,7 +56,7 @@ li{
     opacity: 1;
     color: #fff;
 }
-
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* Carroussel */
 * {
 	box-sizing: border-box;
@@ -160,3 +160,38 @@ label[for="sportiv"] {
     opacity: 0.6;
 }
 
+/* ADD ARROWS&&&&&&&&&&&&&&&&&&&&&& */
+label:before,
+label:after {
+	color: white;
+	display: block;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	padding: 2rem;
+	font-size: 3rem;
+	height: 13rem;
+	line-height: 10rem;
+	top: 50%;
+	cursor: pointer;
+}
+
+label:before {
+	content: "\276D";
+	right: 100%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+label:after {
+	content: "\276C";
+	left: 100%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+    margin-right: 59px;
+}
+
+h1{
+    display: flex;
+    padding-top: 60px;
+    color: #fff;
+    justify-content: center;
+}
