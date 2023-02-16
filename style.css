@@ -1,0 +1,52 @@
+/* ADD NAV & container */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.navbar__brand{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.navbar__brand:hover{
+    color: coral;
+}
+.navbar__nav{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+/* put on one line */
+li{
+    display: inline-block;
+}
+.nava{
+    padding: 7px;
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all .09s ease-out;
+}
+.nava:hover{
+    opacity: 1;
+    color: #fff;
+}
