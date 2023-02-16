@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.body{
+	font-family: sans-serif;
+    background-color: #1c1c1c;
+    
+}
 .navbar{
     position: absolute;
     z-index: 500;
@@ -45,8 +50,113 @@ li{
     text-decoration: none;
     font-weight: 400;
     transition: all .09s ease-out;
+    font-size: 20px;
 }
 .nava:hover{
     opacity: 1;
     color: #fff;
 }
+
+/* Carroussel */
+* {
+	box-sizing: border-box;
+}
+label {
+	background: #444;
+	color: #fff;
+	transition: transform 400ms ease-out;
+	display: inline-block;
+    min-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 100vh;
+    background-size: cover;
+	font-size: 3rem;
+}
+    form {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	white-space: nowrap;
+    overflow: hidden;
+} 
+input {
+	position: absolute;
+}
+.keys {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	transition: all 300ms linear;
+	opacity: 0;
+}
+input:focus ~ .keys {
+	opacity: 0.3;
+}
+input:nth-of-type(1):checked ~ label:nth-of-type(1), 
+input:nth-of-type(2):checked ~ label:nth-of-type(2),
+input:nth-of-type(3):checked ~ label:nth-of-type(3),
+input:nth-of-type(4):checked ~ label:nth-of-type(4),
+input:nth-of-type(5):checked ~ label:nth-of-type(5),
+input:nth-of-type(6):checked ~ label:nth-of-type(6){
+z-index: 0;
+}
+input:nth-of-type(1):checked ~ label {
+	transform: translate3d(0, 0, 0);
+}
+input:nth-of-type(2):checked ~ label {
+	transform: translate3d(-101%, 0, 0);
+}
+
+input:nth-of-type(3):checked ~ label {
+	transform: translate3d(-201%, 0, 0);
+}
+
+input:nth-of-type(4):checked ~ label {
+	transform: translate3d(-301%, 0, 0);
+}
+input:nth-of-type(5):checked ~ label {
+	transform: translate3d(-401%, 0, 0);
+}
+input:nth-of-type(6):checked ~ label {
+	transform: translate3d(-501%, 0, 0);
+}
+
+/* ADD PHOTO SLIDE */
+label[for="diamonds"]{
+	background-image: url(image/title.jpg );
+    opacity: 0.6;
+}
+label[for="hearts"]{
+    background-image: url(image/title1.jpg);
+    opacity: 0.6;
+}
+
+label[for="spades"]{
+    background-image: url(image/title2.jpg);
+    opacity: 0.6;
+}
+label[for="clubs"] {
+	background-image: url(image/title3.jpg);
+    opacity: 0.6;
+}
+
+label[for="man"] {
+	background-image: url(image/title4.jpg);
+    opacity: 0.6;
+}
+
+label[for="sportiv"] {
+	background-image: url(image/title5.jpg);
+    opacity: 0.6;
+}
+
