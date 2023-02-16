@@ -189,9 +189,111 @@ label:after {
     margin-right: 59px;
 }
 
+/* OUR Programs */
 h1{
     display: flex;
     padding-top: 60px;
     color: #fff;
     justify-content: center;
+}
+.programs{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+.wrapper .cart-nav{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly ;
+    width: 180px;
+    background: #fff;
+    padding: 13px 15px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+.wrapper .card {
+    position: relative;
+    width: calc(33% - 13xp);
+    height: 440px;
+    border-radius: 23px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.wrapper{
+    padding: 2%;
+}
+.wrapper .card:hover .content{
+bottom: 0;
+}
+.wrapper .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+    transition: all 0.3s ease;
+}
+.wrapper .card:hover img{
+transform: scale(1.1);
+}
+.wrapper .card .content{
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    padding: 10px 20px 22px 20px;
+    background-color: #fff;
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+.card .content .row,
+.content .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .details span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.content .row .details p{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.content .buttons{
+    margin-top: 12px;
+}
+.content .buttons button{
+    width: 100%;
+    padding: 1px 0;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease ;
+}
+.buttons button:last-child{
+    margin-right: 10px;
+    color: #fff;
+    background: #1c1c1c ;
+}
+.buttons button:last-child:hover{
+    border-color: coral ;
+    background: coral;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
