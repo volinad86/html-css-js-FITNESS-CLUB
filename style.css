@@ -298,6 +298,12 @@ transform: scale(1.1);
     transform: translate(-50%, -50%);
 }
 
+.text{
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25px;
+}
 
 /* <!-- Icon top --> */
 .icon{
