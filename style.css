@@ -297,3 +297,14 @@ transform: scale(1.1);
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/* <!-- Icon top --> */
+.icon{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    }
